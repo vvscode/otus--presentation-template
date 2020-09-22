@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>OTUS Онлайн-образование</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/prism.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<!-- MARKDOWN START -->
+				<section data-markdown="" data-separator="^\r?\n\r?\n\r?\n" class="md-slides">
+					<script type="text/template">
+					</script>
+				</section>
+				<!-- MARKDOWN END -->
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+		<script src="plugin/markdown/marked.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/externalcode/externalcode.js"></script>
+		<script src="plugin/prism/prism.js"></script>
+
+		<script>
+		</script>
+		<!-- Getting params-->
+		<script>
+			const fileName = 'slides.md';
+
+			let param = window.location.search.slice(1).split("=")[1];
+
+			if (param === undefined) {
+				param = fileName;
+			}
+
+			const mdSlides = document.querySelector('.md-slides');
+			
+			mdSlides.dataset.markdown = param;
+		</script>
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				hash: true,
+				slideNumber: false,
+				plugins: [
+					Externalcode,
+				],
+			});
+			console.log(Reveal.getPlugins())
+		</script>
+	</body>
+</html>

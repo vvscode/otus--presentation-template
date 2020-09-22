@@ -1,0 +1,277 @@
+
+@font-face {
+  font-family: "Harabara Bold";
+  src: url("css/fonts/Harabara.eot");
+  src:
+    url("../lib/font/roboto/Roboto-Black.ttf") format("ttf"),
+    url("../lib//font/roboto/Roboto-Bold.ttf") format("ttf"),
+    url("../lib//font/roboto/Roboto-Medium.ttf") format("ttf"),
+    url("../lib//font/roboto/Roboto-Regular.ttf") format("ttf"),
+    url("../lib//font/roboto/Roboto-MediumItalic.ttf") format("ttf"),
+    url("../lib//font/roboto/Roboto-BlackItalic.ttf") format("ttf"),
+  }
+
+.reveal .slides {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.reveal .slides img {
+  border: none;
+  box-shadow: none;
+}
+
+.reveal .present,
+.reveal .past {
+  height: calc(100% - 240px);
+  height: calc(100% - 27vh);
+  padding: 120px 0 !important;
+  padding: 13.5vh 0 !important;
+  top: 0!important;
+}
+
+.reveal .slide-number {
+  width: 20px;
+  left: 60px;
+  bottom: 35px;
+  background-color: transparent;
+  font-size: 32px;
+  font-size: 3.5vh;
+  color: black;
+  font-weight: 700;
+}
+
+.reveal .controls .controls-arrow::before, 
+.reveal .controls .controls-arrow::after {
+  display: none;
+}
+
+
+/*-- GENERAL --*/
+.reveal .slide__top-logo,
+.reveal .slide__bottom-logo {
+  position: absolute;
+  z-index: 1;
+}
+
+.reveal pre {
+  margin: 0 auto;
+  height: 90%;
+  width: 95%;
+}
+
+.reveal pre.auto {
+  height: auto;
+}
+
+.reveal pre code {
+  height: 100%;
+  max-height: 100%;
+  overflow: visible;
+  tab-size: 2;
+  white-space: pre-line;
+}
+
+.reveal .slide__top-logo {
+  height: 6.6vh;
+  object-fit: contain;
+  left: 60px;
+  top: 2vh;
+}
+
+.reveal .slide__bottom-logo {
+  max-height: 10vh;
+  bottom: 0px;
+  right: 50px;
+}
+
+.reveal .line {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #cecece;
+}
+
+.reveal .line:first-of-type{
+  top: 120px;
+  top: 13.5vh;
+}
+
+.reveal .line:nth-of-type(2) {
+  bottom: 120px;
+  bottom: 13.5vh;
+}
+
+.reveal .present {
+  text-align: left;
+}
+
+.slide-inner-wrapper {
+  height: 100%;
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.slide-inner-wrapper.space-between {
+  justify-content: space-between;
+}
+
+.slide-inner-wrapper.start {
+  justify-content: flex-start;
+}
+
+.slide-inner-wrapper.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-content__link {
+  color: blue;
+  font-size: 24px;
+  font-size: 3vh;
+}
+
+.slide__title {
+  text-align: left;
+  font-size: 48px;
+  font-size: 5.5vh;
+  font-weight: 700;
+  padding: 60px 0 80px 0;
+  padding: 6vh 0 7vh 0;
+}
+
+.slide__subtitle {
+  font-size: 40px;
+  font-size: 4.5vh;
+  font-weight: 700;
+}
+
+.slide-content {
+  margin-bottom: 50px;
+  margin-bottom: 4.7vh;
+  font-size: 40px;
+  font-size: 4vh;
+}
+
+.reveal .slide__list-item {
+  justify-self: start;
+  padding-bottom: 50px;
+  padding-bottom: 4.7vh;
+  font-size: 42px;
+  font-size: 4vh;
+}
+
+.slide-content__list.decimal {
+  list-style: decimal;
+}
+
+code[class*="language-"], pre[class*="language-"] {
+  font-size: 18px;
+  font-size: 2vh;
+  overflow: visible;
+  background-color: rgb(34, 34, 34);
+  text-shadow: none;
+  color: #ECF0F1;
+}
+
+/*-- SLIDE --*/
+.slide .slide-inner-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* MARKDOWN STYLES */
+.md-slides .logo-top {
+  position: absolute;
+  z-index: 1;
+  height: 6.6vh;
+  object-fit: contain;
+  left: 60px;
+  top: 2vh;
+}
+
+.md-slides .logo-bottom {
+  position: absolute;
+  z-index: 1;
+  max-height: 10vh;
+  bottom: 0px;
+  right: 50px;
+}
+
+.md-slides hr:first-of-type {
+  margin-top: 0px;
+}
+
+.md-slides hr:nth-of-type(2) {
+  position: absolute;
+  width: 100vw;
+  bottom: 13.5vh;
+  margin-bottom: 0;
+}
+
+.md-slides p {
+  margin: 0;
+}
+
+.md-slides ul {
+  width: calc(100% - 30px);
+  margin: 0 auto;
+}
+
+.md-slides .slide__list-item {
+  font-size: 36px;
+  font-size: calc(33px + 3 * (100vw / 1980));
+}
+
+.md-slides .slide__title {
+  font-size: 56px;
+  font-size: calc(47px + 9  * (100vw / 1980));
+}
+
+.md-slides .slide-list {
+  list-style-type: none;
+  padding: 0 60px;
+}
+
+.md-slides .slide-list > ul {
+  list-style-type: circle;
+}
+
+.md-slides .slide-list > ul > li > a, 
+.md-slides .slide-list > ol > li > a {
+  display: inline-block;
+}
+
+.md-slides .slide-list.slide-list--with-title > ul li:first-of-type, 
+.md-slides .slide-list.slide-list--with-content > ul li:first-of-type,
+.md-slides .slide-list.slide-list--with-content > ul li:nth-of-type(2) {
+  list-style-type: none;
+  margin-left: -30px;
+}
+
+.md-slides .slide-list.slide-list--with-code > ul li {
+  margin-left: -30px;
+  list-style-type: none;
+}
+
+.md-slides .slide-list.slide-list--with-code > ul li a {
+  font-size: 24px;
+  font-size: 3vh;
+}
+
+.md-slides .slide-title {
+  list-style-type: none;
+}
+
+.md-slides pre {
+  height: auto;
+  margin: 0;
+  width: 100%;
+}
+
+.min {
+  padding: 1vh 0;
+}
